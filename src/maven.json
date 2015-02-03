@@ -1,0 +1,46 @@
+{
+  "title": "Maven",
+  "sections": [{
+    "title": "Help",
+    "commands": [{
+      "command": "help:active-profiles",
+      "description": "List the profiles that are active for the build"
+    }, {
+      "command": "help:effective-pom",
+      "description": "Displays the effective POM with the active profiles factored in"
+    }, {
+      "command": "help:effective-settings",
+      "description": "Prints out the calculated settings w. any given profile."
+    }, {
+      "command": "help:describe",
+      "description": "Describes the attributes of a plugin (groupId and artifactoryId)"
+    }, {
+      "command": "mvn help:describe -Dplugin=help -Dfull",
+      "description": "Show full description fo a plugin (in this case the help plugin itself)"
+    }, {
+      "command": "mvn help:describe -Dplugin=compiler -Dmojo=compile -Dfull",
+      "description": "Get information of a single goal"
+    }]
+  }, {
+    "title": "Dependencies",
+    "commands": [{
+      "command": "mvn dependencies:resolve",
+      "description": "List all dependencies in a project"
+    }, {
+      "command": "mvn dependency:analyze",
+      "description": "Analyze the dependencies"
+    }, {
+      "command": "mvn dependency:tree",
+      "description": "Get a dependency tree"
+    }]
+  }, {
+    "title": "Test",
+    "commands": [{
+      "command": "mvn test -Dmaven.test.failure.ignore=true",
+      "description": "Ignoring test failures"
+    }, {
+      "command": "mvn test -Dmaven.test.skip=true",
+      "description": "Skipping unit tests"
+    }]
+  }]
+}
