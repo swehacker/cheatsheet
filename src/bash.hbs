@@ -1,14 +1,29 @@
-<h1>{{title}}</h1>
-<ul id="items">
-  {{#each sections}}
-    <li class="item">
-      <h2>{{title}}</h2>
-      {{#each commands}}
-        <dl>
-          <dt>{{command}}</dt>
-          <dd>{{description}}</dd>
-        </dl>
-      {{/each}}
-    </li>
-  {{/each}}
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="cleartype" content="on" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes">
+  <link type="text/css" rel="stylesheet" media="all" href="cheatsheet.css">
+</head>
+
+<body>
+  <h1>{{title}}</h1>
+  <ul id="items">
+    {{#each sections}}
+      <li class="item">
+        <h2>{{title}}</h2>
+        {{#each commands}}
+          <dl>
+            <dt>{{command}}</dt>
+            <dd>{{description}}</dd>
+          </dl>
+        {{/each}}
+      </li>
+    {{/each}}
+  </ul>
+</body>
+
+</html>
