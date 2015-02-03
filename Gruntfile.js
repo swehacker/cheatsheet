@@ -1,23 +1,15 @@
 module.exports = function(grunt) {
   var config = {
     pkg: grunt.file.readJSON('package.json'),
-    staticHandlebars: {
-      simpleTarget: {
-        files:{'dist/*.html':'src/*.hbs'}
-      }
-    },
-    watch: {
-      src: {
-        files: ['src/*'],
-        tasks: ['staticHandlebars'],
-        options: {
-          spawn: false,
-        },
+    'compile-handlebars': {
+      gottaGlobEmAll: {
+        template: "./src/*.hbs",
+        templateData: "./src/*.json",
+        output: "dist/*.html"
       }
     }
   };
 
   grunt.initConfig(config);
-  grunt.loadNpmTasks('grunt-static-handlebars');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-compile-handlebars');
 };
