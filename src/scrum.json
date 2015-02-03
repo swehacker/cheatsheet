@@ -1,0 +1,110 @@
+{
+  "title": "SCRUM"
+  "items": [
+    {
+      "title": "Roles",
+      "terms": [
+        {
+          "term": "Scrum Master",
+          "definition": "Schedules and leads the sprint meetings. Removes blockers. Keeps the team productive."
+        },
+        {
+          "term": "Product Owner",
+          "definition": "Represents the voice of the customer and the business. In charge of story prioritization."
+        },
+      ]
+    },
+    {
+      "title" :"Meetings",
+      "terms": [
+        {
+          "term": "Backlog Grooming",
+          "definition": "Occurs once per sprint. Add new user stories to the backlog, reprioritize stories, and break down stories into tasks."
+        },
+        {
+          "term": "Planning Poker",
+          "definition": "Occurs once per sprint.  Software engineers collectively agree on the scope for every potential task coming up in the next sprint. Tasks are typically scoped to a number of hours or days."
+        },
+        {
+          "term": "Sprint Planning",
+          "definition": "Occurs once per sprint. Determine which stories and tasks will be added to the next sprint.  Tasks should already be scoped before attending."
+        },
+        {
+          "term": "Daily Standup",
+          "definition": "Occurs once per day. Quick status update from each team member. Identify blockers."
+        },
+        {
+          "term": "Demo Day (Sprint Review)",
+          "definition": "Occurs once at the end of a sprint. Each member demos what they completed to the team."
+        }
+      ]
+    },
+    {
+      "title": "Units of Work",
+      "terms": [
+        {
+          "term": "Epic",
+          "definition": "Grand product vision.  Epics can be broken down into user stories."
+        },
+        {
+          "term": "Sprint",
+          "definition": "Lasts for 2 - 4 weeks, and is typically made up of several user stories."
+        },
+        {
+          "term": "Story",
+          "definition": "Large unit of work that can be completed within one sprint.  Stories are typically scoped based on a Fibonacci scale (1, 2, 3, 5, 8), where 1 is a relatively small story and 8 is a relatively large story.  An alternative to the Fibonacci scale is \"T-shirt\" sizing (XS, S, M, L, XL).  Can be broken down into tasks.  Typically worked on by one or more team members."
+        },
+        {
+          "term": "Task",
+          "definition": "Small unit of work that can be completed within days or hours.  Can be broken down into subtasks.  Typically worked on by several team members."
+        },
+        {
+          "term": "Subtask",
+          "definition": "Very small unit of work that can be completed within a day.  Worked on by one team member."
+        },
+        {
+          "term": "Spike",
+          "definition": "A story or task for answering a question or gathering information."
+        }
+      ]
+    },
+    {
+      "title": "Task States",
+      "terms": [
+        {
+          "term": "Pending",
+          "definition": "Has not been started."
+        },
+        {
+          "term": "Work In Progress (WIP)",
+          "definition": "Has been started.  Several tasks can be WIP at the same time, especially for tasks which are related to each other."
+        },
+        {
+          "term": "Code Complete and In Review",
+          "definition": "code complete, but it is in review by other team members.  If your team does not have a code review process, you can skip this state."
+        },
+        {
+          "term": "Done",
+          "definition": "Completed.  The definition of \"done\" can vary from team to team, which may depend on factors such as the existence of tests written by the engineer or QE, whether or not the task has been committed to the shared code repository, etc.  Whatever your definition of \"done\" is, make sure that the definition is clear to the entire team."
+        }
+      ]
+    },
+    {
+      "title": "Tools",
+      "terms": [
+        {
+          "term": "Task Board",
+          "definition": "A board that organizes the tasks and their states for each team member, including tasks that are Pending, Work In Progress, Code Complete and In Review, and Done.  This can be achieved with a physical board and sticky notes or with a software tool."
+        },
+        {
+          "term": "Burndown Chart",
+          "definition": "Line chart trending downwards from 100% to 0% work remaining on the y axis, and from the sprint start date to the sprint end date on the x axis.  Ideally, sprints should end with the work remaining at 0%.  If it's not, this may indicate that the team members need to improve estimates."
+        },
+        {
+          "term": "Burnup Chart",
+          "definition": "Opposite of Burndown Chart.  Line chart trending upwards from 0% to 100% work completed on the y axis, and from the sprint start date to the sprint end date on the x axis.  Ideally, sprints should end with the work completed at 100%.  If it's not, this may indicate that the team members need to improve estimates."
+        }
+      ]
+    }
+  ]
+}

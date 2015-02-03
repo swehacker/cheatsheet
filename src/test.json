@@ -1,0 +1,42 @@
+{
+  "title": "Test"
+  "items": [
+    {
+      "title": "Testing",
+      "terms": [
+        {
+          "term": "Test Driven Development (TDD)",
+          "definition": "A method of testing software in which the tests are written before the software is built."
+        },
+        {
+          "term": "Continuous Integration",
+          "definition": "Software development practice in which team members integrate their work frequently (i.e. check in their code). This ensures that issues are caught early by automated testing or by other team members."
+        },
+        {
+          "term": "Unit Test",
+          "definition": "Tests small pieces of code, such as functions and methods, typically with mock data.  For example, testing the result of a function given a certain set of parameters.  This should be the backbone of your testing strategy."
+        },
+        {
+          "term": "Functional Test",
+          "definition": "Tests to make sure features work end to end.  For example, testing that a user's settings were updated upon clicking a save button."
+        },
+        {
+          "term": "Integration Test",
+          "definition": "A subset of Functional Tests. Tests to make sure that features or components are compatible with each other."
+        },
+        {
+          "term": "Regression Test",
+          "definition": "A subset of Functional and Unit Tests.  Ensures that new features do not break previously working features."
+        },
+        {
+          "term": "Smoke Test",
+          "definition": "Tests very broad functionality, such as making sure that the software compiles, or that a service is available."
+        },
+        {
+          "term": "Manual Test",
+          "definition": "Human testing.  Very time consuming and costly.  Should be minimized as much as possible."
+        }
+      ]
+    }
+  ]
+}
