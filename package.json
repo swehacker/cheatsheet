@@ -2,7 +2,7 @@
   "name": "CheatSheets",
   "version": "1.0.0",
   "description": "Collecting information in JSON files and compile them with Handlebars which outputs html files",
-  "main": "cheatsheets.js",
+  "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
