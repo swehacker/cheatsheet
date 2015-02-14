@@ -8,7 +8,13 @@ app.set('view engine', 'hbs');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
-  res.render('index');
+  var sheets = fs.readdirSync("data/");
+  var sheetsArray = new Array();
+  sheets.forEach(function(name) {
+    sheetsArray.push({ "name": name.split(".")[0] });
+  });
+
+  res.render('index', { "items": sheetsArray});
 });
 
 app.get('/bash', function(req, res) {
