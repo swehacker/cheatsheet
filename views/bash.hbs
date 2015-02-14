@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+<ul id="items">
+  {{#each sections}}
+    <li class="item">
+      <h2>{{title}}</h2>
+      {{#each commands}}
+        <dl>
+          <dt>{{command}}</dt>
+          <dd>{{description}}</dd>
+        </dl>
+      {{/each}}
+    </li>
+  {{/each}}
+</ul>
