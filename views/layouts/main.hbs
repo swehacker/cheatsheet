@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Cheatsheet</title>
   <meta charset="utf-8">
   <meta http-equiv="cleartype" content="on" />
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -10,18 +11,19 @@
   <script type="text/javascript" src="/js/masonry.pkgd.min.js"></script>
 </head>
 <body>
-  {{{body}}}
+  <div class="container">
+    {{{body}}}
+  </div>
+  <script>
+  window.onload = function() {
+    var msnry = new Masonry( '#items', {
+      columnWidth: 360,
+      itemSelector: '.item',
+      gutter: 20
+    });
 
-<script>
-window.onload = function() {
-  var msnry = new Masonry( '#items', {
-    columnWidth: 360,
-    itemSelector: '.item',
-    gutter: 20
-  });
-
-  msnry.layout();
-}
-</script>
+    msnry.layout();
+  }
+  </script>
 </body>
 </html>
