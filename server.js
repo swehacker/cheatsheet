@@ -1,7 +1,7 @@
 var fs = require("fs");
+var port = process.env.PORT || 9000;
 var express = require("express");
 var app = express();
-
 var handlebars = require("express-handlebars");
 app.engine('hbs', handlebars({ extname: 'hbs', defaultLayout: 'main.hbs'}));
 app.set('view engine', 'hbs');
@@ -36,5 +36,5 @@ app.get('/test', function(req, res) {
   res.render("test", source);
 });
 
-app.listen(process.env.PORT || 9000);
-console.log("Server has started on port " + process.env.PORT || 9000);
+app.listen(port);
+console.log("Server has started on port " + port);
