@@ -12,32 +12,38 @@ app.set('view engine', 'hbs');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
-  res.render('index');
+  var sheets = fs.readdirSync("data/");
+  var sheetsArray = new Array();
+  sheets.forEach(function(name) {
+    sheetsArray.push({ "name": name.split(".")[0] });
+  });
+
+  res.render('index', { "items": sheetsArray});
 });
 
 app.get('/bash', function(req, res) {
-  var source = require("./views/bash.json");
-  res.render("bash", source);
+  var source = require("./data/bash.json");
+  res.render("commands", source);
 });
 
 app.get('/maven', function(req, res) {
-  var source = require("./views/maven.json");
-  res.render("maven", source);
+  var source = require("./data/maven.json");
+  res.render("commands", source);
 });
 
 app.get('/restful', function(req, res) {
-  var source = require("./views/RESTful.json");
-  res.render("RESTful", source);
+  var source = require("./data/restful.json");
+  res.render("commands", source);
 });
 
 app.get('/scrum', function(req, res) {
-  var source = require("./views/scrum.json");
-  res.render("scrum", source);
+  var source = require("./data/scrum.json");
+  res.render("definition", source);
 });
 
 app.get('/test', function(req, res) {
-  var source = require("./views/test.json");
-  res.render("test", source);
+  var source = require("./data/test.json");
+  res.render("definition", source);
 });
 
 app.listen(port);
