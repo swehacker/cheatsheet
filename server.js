@@ -2,6 +2,10 @@ var fs = require("fs");
 var port = process.env.PORT || 9000;
 var express = require("express");
 var app = express();
+
+// Set up for proxing behind apache/nginx
+app.enable('trust proxy');
+
 var handlebars = require("express-handlebars");
 app.engine('hbs', handlebars({ extname: 'hbs', defaultLayout: 'main.hbs'}));
 app.set('view engine', 'hbs');

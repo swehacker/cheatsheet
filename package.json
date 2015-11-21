@@ -1,24 +1,25 @@
 {
-  "name": "CheatSheets",
-  "version": "1.0.0",
-  "description": "Collecting information in JSON files and compile them with Handlebars which outputs html files",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/swehacker/cheatsheet.git"
-  },
-  "author": "Patrik Falk <patrik@patrikfalk.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/swehacker/cheatsheet/issues"
-  },
-  "homepage": "https://github.com/swehacker/cheatsheet",
-  "dependencies": {
-    "express": "^4.11.2",
-    "express-handlebars": "^1.1.0",
-    "handlebars": "^3.0.0"
-  }
+    "name": "CheatSheets",
+    "version": "1.0.0",
+    "description": "Collecting information in JSON files and compile them with Handlebars which outputs html files",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/swehacker/cheatsheet.git"
+    },
+    "author": "Patrik Falk <patrik@patrikfalk.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/swehacker/cheatsheet/issues"
+    },
+    "homepage": "https://github.com/swehacker/cheatsheet",
+    "dependencies": {
+        "express": "^4.11.2",
+        "express-handlebars": "^1.1.0",
+        "handlebars": "^3.0.0"
+    }
 }
