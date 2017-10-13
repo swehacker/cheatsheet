@@ -1,0 +1,7 @@
+= Shortcut for intellij
+Hard to remember shortcuts when jumping between Windows/OSX
+
+|====
+| Description | OSX | Windows
+| UML representation | ⌥⌘U | Ctrl+Alt+U
+|====
