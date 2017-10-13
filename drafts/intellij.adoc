@@ -1,7 +1,17 @@
 = Shortcut for intellij
 Hard to remember shortcuts when jumping between Windows/OSX
 
+== Class / Interface help
 |====
-| Description | OSX | Windows
-| UML representation | ⌥⌘U | Ctrl+Alt+U
+| OSX | Windows | Description 
+| ⌘H | Ctrl+H | Hierarchy Diagram over Classes, Subtypes and Supertypes
+|====
+
+
+
+== UML
+|====
+|OSX | Windows| Description
+| ⌥⌘U | Ctrl+Alt+U | UML Hierarchy Popup 
+| ⌥⇧⌘U | Ctrl+Shift+Alt+U | UML Hierarchy new tab 
 |====
