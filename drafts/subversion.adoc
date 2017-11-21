@@ -1,10 +1,13 @@
-Branching:
+.Branching
+----
   $ svn copy http://svn.example.com/repos/calc/trunk \
            http://svn.example.com/repos/calc/branches/my-calc-branch \
       -m "Creating a private branch of /calc/trunk."
   Committed revision 341.
+----
 
-Diff / Merge:
+.Diff / Merge
+----
  $ svn diff -rHEAD filename # changes in repository
  $ svn diff -rPREV:BASE filename # most recent change
  $ svn diff -r 343:344 http://svn.example.com/repos/calc/trunk
@@ -12,22 +15,34 @@ Diff / Merge:
  U  integer.c
  $ svn status
  M  integer.c
+----
 
-Rollback:
+.Rollback
+----
   $ svn merge -r 100:99 .
   $ svn commit -m "Rollback to revision 99"
   Committed revision 101.
+----
 
-Make a patch against the rails source:
+.Make a patch against the rails source:
+----
   (in /vendor/rails/) $ svn diff > your_patch_name.diff
+----
 
-Edit a dir's ignores:
+.Edit a dir's ignores:
+----
  $ svn propedit svn:ignore your_dir_name
-Set a dir's ignores:
- $ svn propset svn:ignore "ignore1 ignore2" your_dir_name
+----
 
-Switch a working copy to another URL
+.Set a dir's ignores:
+----
+ $ svn propset svn:ignore "ignore1 ignore2" your_dir_name
+----
+
+.Switch a working copy to another URL
+----
  $ svn switch --relocate http://server1:/svn/trunk/ http://server2/svn/trunk/ .
+----
 
 Add all unversioned files in your working copy
  $ svn add --force .
